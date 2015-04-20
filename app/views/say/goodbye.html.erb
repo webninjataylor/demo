@@ -11,6 +11,11 @@
 <p>
   Time in one hour test ... <%= 1.hour.from_now.localtime %>
 </p>
+<ul>
+  <% for file in @files %>
+    <li>File name is <%= file %></li>
+  <% end %>
+</ul>
 <p>
   Say <%= link_to("Hello", say_hello_path) %>
 </p>
